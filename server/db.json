@@ -2,7 +2,7 @@
   "contacts": [
     {
       "id": "tc1",
-      "name": "Rajkumar Yadav",
+      "name": "Rajkumar Yadav ts-1",
       "company": "Google",
       "email": "raj123@hmail.company",
       "title": "front-end",
@@ -29,16 +29,6 @@
       "mobile": "7675069177",
       "photo": "https://www.royalenfield.com/content/dam/royal-enfield/india/motorcycles/landing/royal-enfield-himalayan.jpg",
       "groupId": "3"
-    },
-    {
-      "id": "tc4",
-      "name": "Rakesh Kandukoori",
-      "company": "L&T Technologies",
-      "email": "prakash453@hmail.company",
-      "title": "front-end engineer",
-      "mobile": "7575066133",
-      "photo": "https://www.royalenfield.com/content/dam/royal-enfield/india/motorcycles/landing/royal-enfield-himalayan.jpg",
-      "groupId": "4"
     },
     {
       "photo": "https://images.unsplash.com/photo-1567878673942-be055fed5d30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80",

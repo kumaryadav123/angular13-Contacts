@@ -11,22 +11,13 @@ export class ContactMangerComponent implements OnInit {
   public loading:boolean=false;
   public contacts:MyContact[] = [];
   public errorMessage:string | null=null;
-  
+
   constructor(public cantService:ContactService) { }
 
   
   ngOnInit(): void {
 
-    this.loading=true;
-    this.cantService.getAllContacts().subscribe((data:MyContact[])=>{
-    console.log(data)
-    this.loading=false;
-    this.contacts=data;  
-    },(error)=>{
-      this.errorMessage=error;
-      this.loading=false;
-    })
-  
+ this.getAllContactData();
      
 
     // this.loading=true;
@@ -43,10 +34,35 @@ export class ContactMangerComponent implements OnInit {
     // })
 
     }
+getAllContactData(){
+
+  this.loading=true;
+  this.cantService.getAllContacts().subscribe((data:MyContact[])=>{
+  console.log(data)
+  this.loading=false;
+  this.contacts=data;  
+  },(error)=>{
+    this.errorMessage=error;
+    this.loading=false;
+  })
+
+
+
+
+}
+    deleteContact(contactId:string|undefined){
+      if(contactId){
+      this.cantService.deleteContacts(contactId).subscribe((data:{})=>{
+         this.getAllContactData(); 
+      },(error)=>{
+        this.errorMessage=error;
+        this.loading=false;
+      })
+    }
     
   }
 
-
+}
 
 
 
