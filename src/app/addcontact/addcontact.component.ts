@@ -36,7 +36,6 @@ public addSubmit(){
   },(error)=>{
     this.errorMessage=error;
     this.router.navigate(['/contacts/add']).then();
-    //rajKumar
   })
 }
 }

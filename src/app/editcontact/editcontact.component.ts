@@ -11,11 +11,11 @@ import { ContactService } from '../services/contact.service';
 })
 export class EditcontactComponent implements OnInit {
   public loading:boolean=false;
-  public Id:string | null=null;
+  public contactId:string | null=null;
   public contact:MyContact= {} as MyContact;
   public errorMessage:string|null =null;
   public grpoup:MyGroup[]= [] as MyGroup[];
-  public contactId:any
+ 
  
   constructor(private activatedRoute:ActivatedRoute,
     private contService:ContactService,
@@ -23,13 +23,13 @@ export class EditcontactComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((param)=>{
-      this.contactId=param.get('contactIdawedrfgh')
+      this.contactId=param.get('contactId')
           });
     if(this.contactId){
       this.contService.getContacts(this.contactId).subscribe((data:MyContact)=>{
         this.contact=data;
         this.loading=false;
-                // console.log('contactdata',data)
+      //  console.log('contactdata',data)
          this.contService.getAllGroups().subscribe((data:MyGroup[])=>{
          this.grpoup= data;
 
@@ -43,5 +43,17 @@ export class EditcontactComponent implements OnInit {
     }
 
   }
+  submitUpdate(){
+    if(this.contactId){
+    this.contService.updateContacts(this.contact,this.contactId).subscribe((data:MyContact)=>{
+      this.router.navigate(['/']).then();
+         
+       },(error)=>{
+         this.errorMessage=error;
+         this.router.navigate([`/contacts/edit/${this.contact}`]).then();
+       })
 
+  }
+
+  }
 }

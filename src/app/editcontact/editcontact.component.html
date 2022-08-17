@@ -16,7 +16,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
-            <form submit()="submitUpdate()">
+            <form (submit)="submitUpdate()">
                 <div class="mb-2">
                     <input [(ngModel)]="contact.name" [value]="contact.name"  name= "name" type="text" class="form-control" placeholder="Name">
                 </div>
