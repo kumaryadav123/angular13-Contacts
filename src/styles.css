@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital@0;1&display=swap');
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #cce7e8;   
+}
+
+.contact-img{
+    width:100px;
+    border-radius: 80px;
+
+
+}
+.contact-img-details{
+    width:150px;
+    border-radius: 50%;
+    
+
+}

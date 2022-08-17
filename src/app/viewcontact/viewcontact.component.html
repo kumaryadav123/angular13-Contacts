@@ -1,0 +1,77 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col">
+           <p class="h3 fw-bold text-primary"><i class="fa fa-eye"></i>View contact</p>
+           <p class="fst-italic">The ng-controller directive adds a controller to your application. In the controller you can write code,
+             and make functions and variables, which will be parts of an object, available inside the current HTML element. In AngularJS 
+             this object is called a scope.The ng-controller directive adds a controller to your application. In the controller you can 
+             write code, and make functions and variables, which will be parts of an object.
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<!--Condition based Spinner and error meaasage  code here -->
+<!-- condition based Loading  -->
+<div *ngIf="loading">
+    <app-spinner></app-spinner>
+   </div>
+   <!-- Display Error Messages -->
+   <div *ngIf="!loading && errorMessage">
+     <div class="container">
+       <div class="row">
+         <div class="col">
+           <p class="h4 text-danger fw-bold" > {{errorMessage}} </p>
+   
+   
+         </div>
+       </div>
+     </div>
+   
+   </div>
+   
+
+<!-- view Contact Details -->
+<div *ngIf="!loading && isNotEmpty()" class="container">
+    <div class="row align-items-center">
+        <div class="col-sm-4">
+            <img [src]="contact.photo" 
+            alt="user" class="contact-img-details">
+        </div>
+        <div class="col-sm-6">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-success">Name:
+                    <span class="fw-bold">{{contact.name}}</span>
+                </li>
+                <li class="list-group-item list-group-item-success">
+                    Email:<span class="fw-bold">{{contact.email}}</span>
+                </li>
+                <li class="list-group-item list-group-item-success">
+                    Mobile:<span class="fw-bold">{{contact.mobile}}</span>
+                </li>
+                <li class="list-group-item list-group-item-success">Company:
+                    <span class="fw-bold">{{contact.company}}</span>
+                </li>
+                <li class="list-group-item list-group-item-success">
+                    <Title></Title>Title:<span class="fw-bold">{{contact.title}}</span>
+                </li>
+                <li class="list-group-item list-group-item-success">
+                    Group-Name:<span class="fw-bold">{{group.name}}</span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+ <!-- <pre>{{group|json}}</pre> -->
+<!-- <pre>{{contactId}}</pre> -->
+       <div class="row mt-2">
+        <div class="col">
+            <a routerLink="/" class="btn btn-warning"><i class="fa fa-arrow-alt-circle-left">&nbsp;</i>Go Back</a>
+        </div>
+       </div>
+       
+
+
+</div>

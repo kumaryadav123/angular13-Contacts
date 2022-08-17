@@ -1,0 +1,76 @@
+{
+  "contacts": [
+    {
+      "id": "tc1",
+      "name": "Rajkumar Yadav",
+      "company": "Google",
+      "email": "raj123@hmail.company",
+      "title": "front-end",
+      "mobile": "7675066242",
+      "photo": "https://c8.alamy.com/comp/2B1E7HC/god-shiva-snake-and-lady-durga-tiger-holy-hinduism-illustration-2B1E7HC.jpg",
+      "groupId": "1"
+    },
+    {
+      "id": "tc2",
+      "name": "Ajay Yadav",
+      "company": "TCS",
+      "email": "ajayanil123@hmail.company",
+      "title": " software engineer",
+      "mobile": "9037066242",
+      "photo": "https://www.royalenfield.com/content/dam/royal-enfield/india/motorcycles/landing/royal-enfield-himalayan.jpg",
+      "groupId": "2"
+    },
+    {
+      "id": "tc3",
+      "name": "Anvesh Chindam",
+      "company": "IVY comptech",
+      "email": "anvesh123@hmail.company",
+      "title": "Angular-developer",
+      "mobile": "7675069177",
+      "photo": "https://www.royalenfield.com/content/dam/royal-enfield/india/motorcycles/landing/royal-enfield-himalayan.jpg",
+      "groupId": "3"
+    },
+    {
+      "id": "tc4",
+      "name": "Rakesh Kandukoori",
+      "company": "L&T Technologies",
+      "email": "prakash453@hmail.company",
+      "title": "front-end engineer",
+      "mobile": "7575066133",
+      "photo": "https://www.royalenfield.com/content/dam/royal-enfield/india/motorcycles/landing/royal-enfield-himalayan.jpg",
+      "groupId": "4"
+    },
+    {
+      "photo": "https://images.unsplash.com/photo-1567878673942-be055fed5d30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80",
+      "name": "Ganesh raja",
+      "email": "ganeshraj123@gmail.com",
+      "mobile": 7675066242,
+      "company": "globalworld",
+      "title": "god ",
+      "groupId": "4",
+      "id": "Pr0fR9J"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "College"
+    },
+    {
+      "id": "2",
+      "name": "Family"
+    },
+    {
+      "id": "3",
+      "name": "Friends"
+    },
+    {
+      "id": "4",
+      "name": "Services"
+    },
+    {
+      "id": "5",
+      "name": "Social"
+    }
+  ]
+}
